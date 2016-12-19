@@ -1,0 +1,9 @@
+DEFINED_PHASES=install prepare prerm unpack
+DESCRIPTION=Free calls, text and picture sharing with anyone, anywhere!
+EAPI=5
+HOMEPAGE=http://www.viber.com
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
+_md5_=83340318d059af2739de9e700502df98
