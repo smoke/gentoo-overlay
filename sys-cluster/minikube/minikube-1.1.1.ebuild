@@ -23,7 +23,7 @@ DEPEND="dev-go/go-bindata
 	libvirt? ( app-emulation/libvirt[qemu] )"
 RDEPEND=">=sys-cluster/kubectl-1.14.0"
 
-RESTRICT="test"
+RESTRICT="test network-sandbox"
 
 src_prepare() {
 	default
