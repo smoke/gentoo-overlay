@@ -35,9 +35,9 @@ src_prepare() {
 }
 
 src_install() {
-	doicon usr/share/icons/hicolor/512x512/apps/lens.png
-	doicon -s 512 usr/share/icons/hicolor/512x512/apps/lens.png
-	domenu usr/share/applications/lens.desktop
+	doicon usr/share/icons/hicolor/512x512/apps/lens-desktop.png
+	doicon -s 512 usr/share/icons/hicolor/512x512/apps/lens-desktop.png
+	domenu usr/share/applications/lens-desktop.desktop
 	dodoc usr/share/doc/lens/changelog
 	mv opt "${ED}" || die
 }
