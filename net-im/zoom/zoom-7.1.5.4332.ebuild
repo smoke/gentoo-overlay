@@ -96,7 +96,7 @@ src_prepare() {
 src_install() {
 	insinto /opt/zoom
 	exeinto /opt/zoom
-	doins -r calendar cef diagnostic email imjs js json ringtone sip \
+	doins -r calendar cef diagnostic email imjs js json Qt ringtone sip \
 		timezones translations
 	doins *.pcm Embedded.properties version.txt unifywebview_config.zip
 	doexe zoom zopen ZoomClips ZoomLauncher ZoomWebviewHost *.sh \
@@ -116,6 +116,9 @@ src_install() {
 		# Soname dependency on libwayland-client.so.0
 		rm "${ED}"/opt/zoom/cef/libGLESv2.so || die
 	fi
+
+	dosym -r /opt/zoom/cef/libcef.so /opt/zoom/libcef.so
+	dosym -r /opt/zoom/cef/libffmpeg.so /opt/zoom/libffmpeg.so
 
 	use zoom-symlink && dosym -r /opt/zoom/ZoomLauncher /usr/bin/zoom
 
